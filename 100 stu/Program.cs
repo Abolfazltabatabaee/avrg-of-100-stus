@@ -46,6 +46,7 @@ do
     Console.WriteLine("6_moadel dorus omumi");
     Console.WriteLine("7_adad alav nomarat");
     Console.WriteLine("8_exit");
+
     int x = Convert.ToInt32(Console.ReadLine());
 
     if (x == 1)
@@ -76,7 +77,7 @@ do
             Console.WriteLine("moadel dorus omumi:");
             Console.WriteLine((Math.Round(stu.avrg4(), 2)));
             Console.WriteLine((stu.rank((Math.Round(stu.avrg4(), 2)))));
-            Console.WriteLine("_____________________________________");
+            Console.WriteLine("==================");
         }
     }
     else if (x == 2)
@@ -89,7 +90,7 @@ do
             Console.WriteLine("=");
             Console.WriteLine((Math.Round(stu.avrg(), 2)));
             Console.WriteLine((stu.rank((Math.Round(stu.avrg(), 2)))));
-            Console.WriteLine("__________________________________");  
+            Console.WriteLine("===================");  
 
         }
 
@@ -105,7 +106,7 @@ do
             Console.WriteLine("=");
             Console.WriteLine((Math.Round(stu.avrg5(), 2)));
             Console.WriteLine((stu.rank((Math.Round(stu.avrg5(), 2)))));
-            Console.WriteLine("_____________________________________");
+            Console.WriteLine("===================");
         }
 
     }
@@ -118,7 +119,7 @@ do
             Console.WriteLine("=");
             Console.WriteLine((Math.Round(stu.avrg2(), 2)));
             Console.WriteLine((stu.rank((Math.Round(stu.avrg2(), 2)))));
-            Console.WriteLine("___________________________________");
+            Console.WriteLine("====================");
 
         }
 
@@ -132,8 +133,8 @@ do
             Console.WriteLine("=");
             Console.WriteLine((Math.Round(stu.avrg3(), 2)));
             Console.WriteLine((stu.rank((Math.Round(stu.avrg3(), 2)))));
-            Console.WriteLine("___________________________________");
-
+            Console.WriteLine("===================");
+=
         }
 
     }
@@ -146,7 +147,7 @@ do
             Console.WriteLine("=");
             Console.WriteLine((Math.Round(stu.avrg4(), 2)));
             Console.WriteLine((stu.rank((Math.Round(stu.avrg4(), 2)))));
-            Console.WriteLine("___________________________________");
+            Console.WriteLine("==================");
 
         }
     }
