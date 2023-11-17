@@ -37,17 +37,19 @@ var sortedList4 = stus.OrderByDescending(s => s.avrg4()).ToList();
 
 do
 {
-    Console.WriteLine("chi mikhaii?");
-    Console.WriteLine("1_profile ");
-    Console.WriteLine("2_moadel kol");
-    Console.WriteLine("3_moadel dorus takhasosi");
-    Console.WriteLine("4_moadel dorus **");
-    Console.WriteLine("5_moadel dorus *");
-    Console.WriteLine("6_moadel dorus omumi");
-    Console.WriteLine("7_adad alav nomarat");
-    Console.WriteLine("8_exit");
+       Console.WriteLine("______________________________");
+      Console.WriteLine("|chi mikharr?                |");
+      Console.WriteLine("|1_profile                   |");
+      Console.WriteLine("|2_moadel kol                |");
+      Console.WriteLine("|3_moadel dorus takhasosi    |");
+      Console.WriteLine("|4_moadel dorus **           |");        
+      Console.WriteLine("|5_moadel dorus *            |");         
+      Console.WriteLine("|6_moadel dorus omumi        |");     
+      Console.WriteLine("|8_exit                      |");                   
+       Console.WriteLine("------------------------------");
 
-    int x = Convert.ToInt32(Console.ReadLine());
+     int x = Convert.ToInt32(Console.ReadLine());
+   
 
     if (x == 1)
     {
