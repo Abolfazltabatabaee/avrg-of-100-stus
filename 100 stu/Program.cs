@@ -37,7 +37,7 @@ var sortedList4 = stus.OrderByDescending(s => s.avrg4()).ToList();
 
 do
 {
-    Console.WriteLine("chi mikharr?");
+    Console.WriteLine("chi mikhaii?");
     Console.WriteLine("1_profile ");
     Console.WriteLine("2_moadel kol");
     Console.WriteLine("3_moadel dorus takhasosi");
@@ -183,6 +183,11 @@ do
     } 
     else if (x == 8)
     {
+        Console.WriteLine("");
+        Console.WriteLine( "==============================(    bye B..ch   )================================");
+        Console.WriteLine("");
+        Console.WriteLine("HA HA HA HA HA HA HA HA HA");
+        Console.WriteLine("");
         exit = true; 
     }
  }
