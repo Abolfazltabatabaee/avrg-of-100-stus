@@ -155,16 +155,29 @@ do
         foreach (var stu in stus)
         {
             
-            stu.aa(Convert.ToInt32(stu.riazi));
-            stu.aa(Convert.ToInt32(stu.pishrafe1));
-            stu.aa(Convert.ToInt32(stu.pishrafte2));
-            stu.aa(Convert.ToInt32(stu.tafsir));
-            stu.aa(Convert.ToInt32(stu.tarbiatBadani));
-            stu.aa(Convert.ToInt32(stu.algoritm));
-            stu.aa(Convert.ToInt32(stu.sheygraee));
-            stu.aa(Convert.ToInt32(stu.sistemAmel));
-            stu.aa(Convert.ToInt32(stu.zabanENG));
-            stu.aa(Convert.ToInt32(stu.karagah));
+           Console.WriteLine(stu.name + "=");
+  
+ if(stu.aa(stu.riazi) == true)
+     Console.WriteLine("riazi=" + stu.riazi);
+ if (stu.aa(stu.pishrafe1) == true)
+     Console.WriteLine("pishrafte1=" + stu.pishrafe1);
+ if (stu.aa(stu.pishrafte2) == true)
+     Console.WriteLine("pishrafte2=" + stu.pishrafte2);
+ if (stu.aa(stu.tafsir) == true)
+     Console.WriteLine("tafsir=" + stu.tafsir);
+ if (stu.aa(stu.tarbiatBadani) == true)
+     Console.WriteLine("tarbiatBadani=" + stu.tarbiatBadani);
+ if (stu.aa(stu.algoritm) == true)
+     Console.WriteLine("algoritm=" + stu.algoritm);
+ if (stu.aa(stu.sheygraee) == true)
+     Console.WriteLine("sheygraee=" + stu.sheygraee);
+ if (stu.aa(stu.sistemAmel) == true)
+     Console.WriteLine("sistemAmel=" + stu.sistemAmel);
+ if (stu.aa(stu.zabanENG) == true)
+     Console.WriteLine("zabanENG=" + stu.zabanENG);
+ if (stu.aa(stu.karagah) == true)
+     Console.WriteLine("karagah=" + stu.karagah);
+ Console.WriteLine("=============");
 
         }
     } 
@@ -266,20 +279,21 @@ class stu
         }
         return "";
     }
-    public void aa(int num)
-    {
-        int sum = 0;
-
-        for (int i = 1; i < num; i++)
-        {
-
-            if (num % i == 0)
-            {
-                sum++;
-            }
-
-        }
-        if (sum < 2 && num > 1)
-            Console.WriteLine(num);
-    }
+   public bool aa(double num)
+ {
+     int sum = 0;
+     if (num == 0) return false;
+     else
+     {
+         for (int i = 1; i <= num; i++)
+         {
+             if (num % i == 0)
+             {
+                 sum = sum + 1;
+             }
+         }
+         if (sum == 2) return true;
+         else return false;
+     }
+ }
 }//abu
